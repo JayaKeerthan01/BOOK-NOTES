@@ -1,0 +1,293 @@
+
+/* INDEX */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: black;
+    color: white;
+    margin: 0 25%;
+    font-family: Georgia, serif;
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.head h5 a{
+    color: white;
+    padding: 10px;
+    border: 2px solid green;
+    border-radius: 10px;
+    background-color: green;
+    font-size: 20px;
+}
+.head h1{
+    margin-top: 10px;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+.head h1 a{
+    color: green;
+}
+.title{
+    display: block;
+    padding: 20px 0;
+    font-family: "Sedan", serif;
+}
+.title h2{
+    color: green;
+    font-size: 35px;
+    padding: 20px 0;
+    letter-spacing: 2.5px;
+
+}
+.title p{
+    font-size: 25px;
+    padding: 10px 0 30px 0;
+}
+.book_details{
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    margin:40px 0 100px 0;
+
+}
+.book_cover img{
+    width: 140px;
+    height: 220px;
+    object-fit: cover;
+    float: left;
+    margin: 0 40px 0 0;
+}
+.text{
+    display: block;
+    align-items: center;
+}
+
+.text h1{
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+.text h1 a{
+    color: green;
+}
+
+.text h5{
+    font-weight: lighter;
+    padding:20px 0 20px 0;
+    color: gray;
+    font-size: 18px;
+}
+.text p{
+    padding:0 0 20px 0;
+    font-size: 22px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+a{
+    text-decoration: none;
+    color: rgb(98, 98, 228);
+}
+.book_details a{
+    font-size: 23px;
+}
+
+.edit_button{
+    background-color: green;
+    color: white;
+    padding: 7px;
+    margin: 0 5px;
+    float: right;
+    border-radius: 5px;
+}
+
+.delete_button{
+    background-color: rgb(198, 30, 30);
+    color: white;
+    padding: 7px;
+    margin: 0 5px;
+    float: right;
+    border-radius: 5px;
+}
+
+/* ADD NEW BOOK */
+/* 1 */
+.new_book{
+    margin: 16% 0;
+    font-family: "Sedan", serif;
+}
+.new_book form label{
+    font-size: 20px;
+}
+.new_book form input{
+    width: 100%;
+    margin: 18px 0;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: none;
+}
+
+.new_book form [type=submit]{
+    width: 100%;
+    background-color: green;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* READ NOTES */
+
+.read_details{
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    margin:40px 0 50px 0;
+    font-weight: lighter;
+    font-family: "Sedan", serif;
+}
+.read_cover{
+    display: flex;
+    margin:20px 0;
+}
+.read_cover img{
+    width: 140px;
+    height: 220px;
+    object-fit: cover;
+    float: left;
+    margin: 0 40px 0 0;
+}
+
+.read_text h1{
+    font-size: 30px;
+    color: green;
+}
+
+.read_text ul{
+    list-style-type: none;
+    margin-top: 30px;
+    color: gray;
+}
+
+.read_text ul li{
+    font-size: 17px;
+    margin: 15px 0;
+}
+
+.read_details p{
+    padding:0 0 20px 0;
+    font-size: 22px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.notes h1{
+    color: green;
+    font-size: 35px;
+    letter-spacing: 4px;
+}
+.notes ul{
+    list-style-type: none;
+}
+.notes ul li{
+    margin-top: 20px;
+    font-size: 23px;
+    line-height: 1.2em;
+}
+
+.notes a{
+    color: white;
+    padding: 10px;
+    border: 2px solid green;
+    border-radius: 10px;
+    background-color: green;
+    font-size: 20px;
+}
+
+.notes_link{
+    margin: 70px 0;
+}
+
+.notes_link form textarea{
+    width: 100%;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.notes_link form [type=submit]{
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: green;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.notes_link form ::placeholder{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

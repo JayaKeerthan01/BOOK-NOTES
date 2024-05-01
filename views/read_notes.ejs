@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>READ NOTES</title>
+</head>
+<body>
+    <div>
+        <div class="head">
+            <h1><a href="/">BOOK NOTES</a></h1>
+        </div>
+        <section>
+            <div class="read_details">
+                <div class="read_cover">
+                    <div class="image">
+                        <img src="https://covers.openlibrary.org/b/isbn/<%= book.isbn %>-M.jpg" alt="">
+                    </div>
+                    <div class="read_text">
+                        <h1><%= book.title %></h1>
+                        <ul>
+                            <li>ISBN: <%= book.isbn %></li>
+                            <li>DATE READ: <span id="date"></span>.</li>
+                            <li>HOW STRONGLY I RECOMMEND YOU: <%= book.rating %>/10</li>
+                        </ul>
+                    </div>
+                </div>
+                <p><%= book.description %></p>
+            </div>
+        </section>
+        <div class="notes">
+            <h1>MY NOTES</h1>
+            <% notes.forEach((note)=>{ %>
+            <ul>
+                <li><%= note.notes %></li>
+            </ul>
+            <% }) %>
+        </div>
+        <div class="notes_link">
+            <form action="/new_notes/<%= book.id %>" method="post">
+                <textarea name="notes" cols="20" rows="5" placeholder="ADD NOTES"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+<script>
+    const date=new Date()
+    const today=document.getElementById('date').innerHTML=`${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`
+</script>   
+</body>
+</html>

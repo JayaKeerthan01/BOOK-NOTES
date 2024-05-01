@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>ADD NEWBOOK</title>
+</head>
+<body>
+    <div class="new_book">
+        <% if(locals.specific_book){ %>
+        <form action="/edited_book/<%= specific_book.id %>" method="post">
+            <label>Title</label>
+            <input type="text" name="title" value="<%= specific_book.title %>" placeholder="Book Title">
+            <label>Description</label>
+            <input type="text" name="description" value="<%= specific_book.description %>" placeholder="Book Description">
+            <label>ISBN Number</label>
+            <input type="text" name="isbn" value="<%= specific_book.isbn %>" placeholder="Book ISBN Numnber">
+            <label>Rating</label>
+            <input type="text" name="rating" value="<%= specific_book.rating %>" placeholder="Book Rating">
+            <input type="submit" value="Submit">
+        </form>
+        <% }else{ %>
+            <form action="/add_new" method="post">
+                <label>Title</label>
+                <input type="text" name="title" placeholder="Book Title">
+                <label>Description</label>
+                <input type="text" name="description" placeholder="Book Description">
+                <label>ISBN Number</label>
+                <input type="text" name="isbn" placeholder="Book ISBN Numnber">
+                <label>Rating</label>
+                <input type="text" name="rating" placeholder="Book Rating">
+                <input type="submit" value="Submit">
+            </form>
+        <% } %>
+    </div>
+</body>
+</html>

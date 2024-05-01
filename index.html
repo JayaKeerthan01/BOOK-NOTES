@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="title">
+        <h1>BOOK NOTES</h1>
+        <h2>BOOKS I'VE READ</h2>
+        <p>Tiny summary but detailed notes for each. Use the ISBN number to find it from your local library or anywhere else. This page will constantly
+             update as I read more, so bookmark it if you want to check back in a few months.
+        </p>
+        <hr>
+    </div>
+    <section>
+        <div class="book_details">
+            <div class="book_cover">
+                <div class="image">
+                    <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h1>YOU CAN NEGOTIATE ANYTHING - BY HERB COHEN</h1>
+                    <h5><b>Date read: <span id="date"></span>. How strongly I recommend it: 10/10</b></h5>
+                    <p>Everything is negotiable. Challenge authority. You have the power in any situation. 
+                        This is how to realize it and use it. A must-read classic from 1980 from a master negotiator.
+                         My notes here aren’t enough because the little book is filled with so many memorable stories
+                          — examples of great day-to-day moments of negotiation that will stick in your head for when 
+                          you need them. (I especially loved the one about the power of the prisoner in solitary
+                           confinement.) So go buy and read the book. I’m giving it a 10/10 rating even though the
+                         second half of the book loses steam, because the first half is so crucial.
+                    </p>
+                </div>
+            </div>
+            <a href="#">Read my notes</a> 
+        </div>
+    </section>
+    <img src="https://covers.openlibrary.org/b/isbn/9788186775219-S.jpg" alt="">
+<script>
+    const date=new Date()
+    const today=document.getElementById('date').innerHTML=`${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`
+</script>
+    
+</body>
+</html>
